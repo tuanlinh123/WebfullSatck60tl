@@ -1,11 +1,10 @@
 const fs = require("fs");
 const express = require("express");
-
+//bài 1
 let rawdata = fs.readFileSync("tuanlinh.json");
 let infor = JSON.parse(rawdata);
-
 console.log(infor);
-
+//bài 2
 const app = express();
 
 app.get("/index", (req, res) => {
